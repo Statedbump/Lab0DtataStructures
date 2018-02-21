@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class AreaCircle {
@@ -11,6 +12,7 @@ public class AreaCircle {
 		System.out.println("Calculating....");
 		double area = pi*Math.pow(radius, 2);
 		System.out.println("the area is: "+ area);
+		System.out.println("half the area of the circle is: " + area/2);
 		sc.close();
 		
 		
