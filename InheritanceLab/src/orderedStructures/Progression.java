@@ -29,7 +29,7 @@ public abstract class Progression implements OrderedNumberStructure {
 
 		System.out.println("Index --- Term Value"); 
 		for (int i=1; i<=n; i++) { 
-			System.out.println((i) +  "---" + this.getTerm(i));  
+			System.out.println((i) +  "---  " + this.getTerm(i));  
 		}
 	}
 
@@ -45,5 +45,9 @@ public abstract class Progression implements OrderedNumberStructure {
 	
 	public abstract double nextValue(); 
 	
-	public abstract String toString();
+	
+	
+	public abstract boolean equals(Object o);
+
+
 }

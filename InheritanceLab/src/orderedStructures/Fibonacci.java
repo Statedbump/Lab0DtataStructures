@@ -10,6 +10,8 @@ public class Fibonacci extends Progression {
 	}
 	public Fibonacci(double first) {
 		super(first);
+		
+		
 	}
 
 	@Override
@@ -26,10 +28,11 @@ public class Fibonacci extends Progression {
 		prev = 0; 
 		return value; 
 	}
+	
 	@Override
-	public String toString() {
+	public boolean equals(Object o) {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 	
 	

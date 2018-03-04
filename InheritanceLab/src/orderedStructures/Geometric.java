@@ -1,6 +1,8 @@
 package orderedStructures;
 
-public class Geometric extends Progression {
+
+
+public class Geometric extends Progression{
 
 	private double commonFactor; 
 
@@ -20,7 +22,7 @@ public class Geometric extends Progression {
 		return current;
 	}
 
-	@Override
+
 	public String toString() {
 		String firstValue =  Double.toString(super.firstValue());
 		String commonFactor = Double.toString(this.commonFactor);
@@ -34,5 +36,17 @@ public class Geometric extends Progression {
 
 		return firstValue()*Math.pow(commonFactor, n-1);
 	}
+
+	@Override
+	public boolean equals(Object o) {
+	Geometric g2 = (Geometric) o;
+	return this.toString()==g2.toString();
+	
+	}
+
+
+
+	
+
 
 }
