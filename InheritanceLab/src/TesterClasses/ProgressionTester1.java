@@ -12,6 +12,8 @@ public class ProgressionTester1 {
 	 */
 	public static void main(String[] args) {
 		Progression p; 
+		Progression p2; 
+		
 		
 
 		System.out.println("Testing Fibonaci:"); 
@@ -20,13 +22,18 @@ public class ProgressionTester1 {
 		
 		
 		System.out.println("\n\n\nTesting Geometric:"); 
-		p = new Geometric(2, 3); 
+		p = new Geometric(2, 3);
+		
 		p.printAllTerms(20);
 		
 		
 		System.out.println("\n\n\nTesting Arithmetic:"); 
 		p = new Arithmetic(2, 3); 
+		p2 =new Arithmetic(3, 6);
 		p.printAllTerms(20);
+		p2.printAllTerms(20);
+		
+	
 		
 		
 	}
